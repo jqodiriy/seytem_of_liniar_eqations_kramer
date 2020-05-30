@@ -42,7 +42,7 @@ double dt(int x){
 }
 
 int main(){
-
+    
     cin >> n;
     for(int i=0; i < n; i ++){
         for(int j=0; j <= n; j ++){
@@ -59,9 +59,9 @@ int main(){
             if(d[i]!=0) ok = 0;
         }
         if(ok == 0)
-            cout << "tenglamalar sistemasi yechimga ega emas !!!";
+            cout << "there are no any solutions !!!";
         else
-            cout << "tenglamalar sistemasi cheksiz ko`p yechimga ega !!!";
+            cout << "there are has many solutions !!!";
         return 0;
     }
     for(int i=0; i < n; i ++){
@@ -72,7 +72,7 @@ int main(){
         cout << "x" << i+1 << " = " << x[i] << endl;
     }
     cout << "\n\n";
-    cout <<" --------- Tekshirish ---------\n";
+    cout <<" --------- cheking ---------\n";
     for(int i=0; i < n; i ++){
         for(int j=0; j < n; j ++){
             
